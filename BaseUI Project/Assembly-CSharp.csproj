@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\HealthBars.cs" />
+     <Compile Include="Assets\Scripts\PawnMovement.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\UIGameManager.cs" />
      <Compile Include="Assets\Scripts\UIItems.cs" />
