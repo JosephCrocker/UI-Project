@@ -15,15 +15,23 @@ public class ScoreManager : MonoBehaviour
     float PlaceHolderScore2nd;
     float PlaceHolderScore3rd;
     // Player Pref Keys
+    [HideInInspector]
     public string FirstHighScore;
+    [HideInInspector]
     public string SecondHighScore;
+    [HideInInspector]
     public string ThirdHighScore;
     // Player Pref Saves
+    [HideInInspector]
     public float m_Pref1st;
+    [HideInInspector]
     public float m_Pref2nd;
+    [HideInInspector]
     public float m_Pref3rd;
     // Last Score Variables
+    [HideInInspector]
     public string LastScore;
+    [HideInInspector]
     public float m_LastScore;
     float PlaceHolderLastScore;
 

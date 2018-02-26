@@ -14,14 +14,19 @@ public class HealthBars : MonoBehaviour
     public Slider Health3Slider;
     public Slider Health4Slider;
 
+    [HideInInspector]
     public float Player1Health;
+    [HideInInspector]
     public float Player2Health;
+    [HideInInspector]
     public float Player3Health;
+    [HideInInspector]
     public float Player4Health;
-
-
+    [HideInInspector]
     public float EasyHealthDecreaseValue;
+    [HideInInspector]
     public float MediumHealthDecreaseValue;
+    [HideInInspector]
     public float HardHelathDecreaseValue;
 
     public UIManager MainManager;
@@ -44,7 +49,6 @@ public class HealthBars : MonoBehaviour
         Player1Health = 100;
         if (Manager.Player1Loaded == true)
         {
-            Debug.Log("Player 1 Has Loaded");
             Health1Slider.gameObject.SetActive(true);
             Player1Text.gameObject.SetActive(true);
             Health1Slider.value = Player1Health;
@@ -61,7 +65,6 @@ public class HealthBars : MonoBehaviour
         Player2Health = 100;
         if (Manager.Player2Loaded == true)
         {
-            Debug.Log("Player 2 Has Loaded");
             Health2Slider.gameObject.SetActive(true);
             Player2Text.gameObject.SetActive(true);
             Health2Slider.value = Player2Health;
@@ -78,7 +81,6 @@ public class HealthBars : MonoBehaviour
         Player3Health = 100;
         if (Manager.Player3Loaded == true)
         {
-            Debug.Log("Player 3 Has Loaded");
             Health3Slider.gameObject.SetActive(true);
             Player3Text.gameObject.SetActive(true);
             Health3Slider.value = Player3Health;
@@ -95,7 +97,6 @@ public class HealthBars : MonoBehaviour
         Player4Health = 100;
         if (Manager.Player4Loaded == true)
         {
-            Debug.Log("Player 4 Has Loaded");
             Health4Slider.gameObject.SetActive(true);
             Player4Text.gameObject.SetActive(true);
             Health4Slider.value = Player4Health;

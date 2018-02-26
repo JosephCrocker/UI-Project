@@ -19,7 +19,6 @@ public class UIGameManager : MonoBehaviour
     void Start ()
     {
         isPaused = false;
-
         m_isDead = false;
     }
 
@@ -77,14 +76,15 @@ public class UIGameManager : MonoBehaviour
     // Option To Leave MidGame
     public void MainMenuMidGame()
     {
-        MainCanvas.gameObject.SetActive(false);
-        MainMenuLoad.gameObject.SetActive(true);
-        Time.timeScale = 0.0f;
-        m_Scores.m_Score = 0;
+        //MainCanvas.gameObject.SetActive(false);
+        //MainMenuLoad.gameObject.SetActive(true);
+        //Time.timeScale = 0.0f;
+        //m_Scores.m_Score = 0;
+        //MainManager.Easy = false;
+        //MainManager.Medium = false;
+        //MainManager.Hard = false;
 
-        MainManager.Easy = false;
-        MainManager.Medium = false;
-        MainManager.Hard = false;
+        SceneManager.LoadScene("PlayScene");
     }
     //-----------------------------------------------------//
 
